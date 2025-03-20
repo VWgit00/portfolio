@@ -1,0 +1,341 @@
+/* 🔹 General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FAF3E0; /* Soft Beige */
+    color: #2F2F2F;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 🔹 Hero Section */
+.hero-section {
+    width: 100%;
+    height: 80vh; /* Reduced height to bring other sections closer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #FAF3E0; /* Soft Beige */
+    animation: fadeIn 1.5s ease-in-out;
+    
+}
+
+/* 🔹 Hero Content & Profile */
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Reduced spacing between profile & text */
+    max-width: 900px;
+    width: 90%;
+    animation: slideUp 1.2s ease-in-out;
+}
+
+/* 🔹 Profile Picture */
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #E27D60; /* Coral Accent */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    animation: fadeInScale 1s ease-in-out;
+}
+
+/* 🔹 Hero Text */
+.hero-content {
+    color: #2F2F2F;
+    text-align: left;
+    max-width: 450px;
+    opacity: 0;
+    animation: slideUp 1s ease-in-out 0.5s forwards;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.hero-content .tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Navbar (Below Hero Section) */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0; /* Reduced padding to keep navbar closer */
+    margin-top: -50px; /* Further reduces space from hero */
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+/* 🔹 Navbar Items */
+.nav-links li {
+    padding: 8px 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 🔹 Navbar Hover & Active Effects */
+.nav-links li:hover {
+    transform: scale(1.05);
+    background: rgba(255, 160, 122, 0.2); /* Soft coral hover effect */
+}
+
+/* 🔹 Navbar Links Styling */
+.nav-links a {
+    text-decoration: none;
+    color: #2F2F2F;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+/* 🔹 Underline Animation */
+.nav-links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #E27D60;
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover {
+    color: #E27D60;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* 🔹 Contact Section (Now Positioned at the Bottom) */
+.contact-section {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 15px 0; /* Reduced padding */
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px; /* Brings it closer to the navbar */
+}
+
+.contact-section a {
+    color: #FFA07A;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: #D1925A;
+}
+
+/* 🔹 Content Sections (Transparent Glassmorphism Effect) */
+.content-section {
+    display: none;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    max-width: 850px;
+    background: rgba(255, 255, 255, 0.15); /* Soft transparent white */
+    backdrop-filter: blur(12px); /* Glassmorphism effect */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    color: #1C1F33; /* Deep Navy */
+}
+
+/* 🔹 Title Styling Inside Sections */
+.content-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #F8C8DC; /* Soft Pink */
+}
+
+/* 🔹 Paragraph Styling */
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #FAF3E0; /* Soft Beige */
+}
+
+/* 🔹 Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #F8C8DC; /* Soft Pink */
+    transition: 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+    color: #A27B5C; /* Warm Taupe */
+}
+
+/* 🔹 Contact Section (Always Fixed at Bottom) */
+.contact-section {
+    width: 100%;
+    background: #1C1F33; /* Deep Navy */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.contact-section a {
+    color: #F8C8DC; /* Soft Pink */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: #D6B4A0; /* Muted Peach */
+}
+
+/* 🔹 Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/* 🔹 Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #FF6347;
+    transition: 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+    color: #D1925A;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 900px) {
+    .hero-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+    .hero-content {
+        text-align: center;
+    }
+    .navbar {
+        width: 90%;
+        padding: 8px;
+    }
+    .nav-links {
+        gap: 12px;
+    }
+    .contact-section {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        width: 95%;
+        padding: 6px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-links li {
+        padding: 6px 8px;
+    }
+    .contact-section {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+/* 🔹 Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
