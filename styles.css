@@ -1,3 +1,4 @@
+
 /* 🔹 General Reset */
 * {
     margin: 0;
@@ -16,6 +17,7 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+
 
 /* 🔹 Hero Section */
 .hero-section {
@@ -43,11 +45,11 @@ body {
 
 /* 🔹 Profile Picture */
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #E27D60; /* Coral Accent */
+    border: 3px solid #E27D60; /* Coral Accent */
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
     animation: fadeInScale 1s ease-in-out;
 }
@@ -135,28 +137,452 @@ body {
     width: 100%;
 }
 
-/* 🔹 Contact Section (Now Positioned at the Bottom) */
+/* 🔹 Contact Section (Fixed at Bottom) */
 .contact-section {
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: #1C1F33; /* Deep Navy */
     color: white;
-    padding: 15px 0; /* Reduced padding */
+    padding: 15px 0;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 20px; /* Brings it closer to the navbar */
-}
-
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 100;
+  }
+  
 .contact-section a {
-    color: #FFA07A;
+    color: #E27D60; /* Soft Pink */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-}
-
+  }
+  
 .contact-section a:hover {
-    color: #D1925A;
-}
+    color: #D6B4A0; /* Muted Peach */
+  }
 
+
+  .contact-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: transparent;
+    
+    color: #E27D60;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-btn .icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  
+  /* 🔹 Responsive Padding for Contact Section */
+  @media (max-width: 900px), (max-width: 768px) {
+    .contact-section {
+      padding: 12px 0;
+    }
+  }
+  
+
+/* 🔹 About Section (Styled like content-section with Glassmorphism) */
+#about {
+    display: none;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    max-width: 850px;
+    background: rgba(28, 31, 51, 0.8); /* Deep Navy Blue with transparency */
+    backdrop-filter: blur(16px); /* Stronger blur for glass effect */
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    animation: fadeIn 0.6s ease-in-out;
+    
+    color: #FAF3E0; /* Soft Beige text for contrast */
+  }
+  
+  
+#about h2 {
+    font-size: 2rem;
+    color: #E27D60; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Lancelot', serif;
+  }
+  
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #FAF3E0;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 15px;
+  }
+
+/* 🔹 Education Section Glass Style */
+#education {
+    display: none;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 850px;
+    background: rgba(28, 31, 51, 0.8); /* Deep navy */
+    backdrop-filter: blur(16px);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    color: #FAF3E0;
+    animation: fadeIn 0.6s ease-in-out;
+    text-align: justify;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  /* Title */
+  #education h3 {
+    font-size: 2rem;
+    color: #E27D60;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Lancelot', serif;
+  }
+  
+  /* Each Education Card */
+  .edu-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* Heading for Degree */
+  .edu-card h4 {
+    font-size: 1.2rem;
+    color: #E27D60;
+    font-family: 'Lancelot', serif;
+    margin-bottom: 5px;
+  }
+  
+  /* Paragraphs (school, location) */
+  .edu-card p {
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: #FAF3E0;
+    margin-bottom: 6px;
+  }
+  
+  /* Bullet points */
+  .edu-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .edu-card ul li {
+    font-size: 0.95rem;
+    color: #FCEEDB;
+    margin-bottom: 8px;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
+  }
+  
+  
+/* 🔹 Experience Section Container */
+#experience {
+    display: none;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-width: 1000px;
+    background: rgba(28, 31, 51, 0.8);
+    backdrop-filter: blur(16px);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+    color: #FAF3E0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: justify;
+  }
+  
+  /* Section Title */
+  #experience h3 {
+    font-size: 2rem;
+    color: #E27D60;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Lancelot', serif;
+  }
+  
+  /* 🔹 Grid Layout */
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  
+  /* 🔹 Each Card */
+  .experience-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Job Title */
+  .experience-card h4 {
+    font-size: 1.2rem;
+    color: #E27D60;
+    font-family: 'Lancelot', serif;
+    margin-bottom: 4px;
+  }
+  
+  /* Company Name */
+  .experience-card .company {
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #FAF3E0;
+    margin-bottom: 4px;
+  }
+  
+  /* Location + Duration */
+  .experience-card .exp-location {
+    font-size: 0.95rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: #FAF3E0;
+    margin-bottom: 10px;
+  }
+  
+  /* Bullet Points */
+  .experience-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .experience-card ul li {
+    font-size: 0.95rem;
+    color: #FCEEDB;
+    margin-bottom: 8px;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
+  }
+  
+/* 🔹 Projects Section */
+#projects {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-width: 1000px;
+    height: 90vh; /* new */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* not center to allow scroll */
+    align-items: center;
+    background: rgba(28, 31, 51, 0.8);
+    backdrop-filter: blur(16px);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+    color: #FAF3E0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+  }
+  
+  
+  /* Section Title */
+  #projects h3 {
+    font-size: 2rem;
+    color: #E27D60;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Lancelot', serif;
+  }
+  
+  /* Grid Layout */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* Title */
+  .project-card h4 {
+    font-size: 1.2rem;
+    color: #F8C8DC;
+    font-family: 'Lancelot', serif;
+    margin-bottom: 5px;
+  }
+  
+  /* Subtitle */
+  .project-subtitle {
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #FAF3E0;
+    margin-bottom: 10px;
+  }
+  
+  /* Bullet Points */
+  .project-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .project-card ul li {
+    font-size: 0.95rem;
+    color: #FCEEDB;
+    margin-bottom: 8px;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
+  }
+  
+  /* Skills Applied Paragraph */
+  .project-card p:last-of-type {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #FFDAB9;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+  }
+
+  
+  /* Scrollable content area */
+  .projects-scroll {
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 8px;
+    margin-top: 10px;
+  }
+  
+
+/* 🔹 Skills Section Styling */
+#skills {
+    display: none;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 900px;
+    background: rgba(28, 31, 51, 0.85); /* Deep navy with transparency */
+    backdrop-filter: blur(16px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    color: #FAF3E0;
+    animation: fadeIn 0.6s ease-in-out;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow-y: auto;
+    max-height: 85vh;
+  }
+  
+  /* Title */
+  #skills h2 {
+    font-size: 2rem;
+    color: #E27D60;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Lancelot', serif;
+  }
+  
+  /* Skills List */
+  #skills ul {
+    list-style: disc;
+    padding-left: 25px;
+  }
+  
+  #skills ul li {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.7;
+    color: #FCEEDB;
+  }
+
+  /* 🔹 Certifications Section Styling */
+#certifications {
+    display: none;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    max-width: 850px;
+    background: rgba(28, 31, 51, 0.85); /* Deep navy with transparency */
+    backdrop-filter: blur(16px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    color: #FAF3E0;
+    animation: fadeIn 0.6s ease-in-out;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  /* Section Title */
+  #certifications h3 {
+    font-size: 2rem;
+    color: #E27D60;
+    margin-bottom: 20px;
+    font-family: 'Lancelot', serif;
+  }
+  
+  /* List of Certifications */
+  #certifications ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #certifications ul li {
+    font-size: 1.05rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: #FCEEDB;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  #certifications ul li:last-child {
+    border-bottom: none;
+  }
+  
+  
 /* 🔹 Content Sections (Transparent Glassmorphism Effect) */
 .content-section {
     display: none;
@@ -191,7 +617,6 @@ body {
     color: #FAF3E0; /* Soft Beige */
 }
 
-/* 🔹 Close Button */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -200,49 +625,15 @@ body {
     cursor: pointer;
     border: none;
     background: none;
-    color: #F8C8DC; /* Soft Pink */
+    color: #FAF3E0;
     transition: 0.3s ease-in-out;
-}
+  }
+  
+  .close-btn:hover {
+    color: #FAF3E0;
+  }
+  
 
-.close-btn:hover {
-    color: #A27B5C; /* Warm Taupe */
-}
-
-/* 🔹 Contact Section (Always Fixed at Bottom) */
-.contact-section {
-    width: 100%;
-    background: #1C1F33; /* Deep Navy */
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 0.9rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-
-.contact-section a {
-    color: #F8C8DC; /* Soft Pink */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.contact-section a:hover {
-    color: #D6B4A0; /* Muted Peach */
-}
-
-/* 🔹 Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -55%);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
-}
 
 
 /* 🔹 Close Button */
@@ -254,13 +645,47 @@ body {
     cursor: pointer;
     border: none;
     background: none;
-    color: #FF6347;
+    color: #FAF3E0;
     transition: 0.3s ease-in-out;
 }
 
 .close-btn:hover {
     color: #D1925A;
 }
+
+/* 🔹 Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
 
 /* 🔹 Responsive Design */
 @media (max-width: 900px) {
@@ -308,34 +733,7 @@ body {
     }
 }
 
-/* 🔹 Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-@keyframes fadeInScale {
-    from {
-        opacity: 0;
-        transform: scale(0.85);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
+
+

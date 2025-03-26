@@ -32,90 +32,117 @@
             <li><a href="#" onclick="openSection('projects'); return false;">Projects</a></li>
             <li><a href="#" onclick="openSection('skills'); return false;">Skills</a></li>
             <li><a href="#" onclick="openSection('certifications'); return false;">Certifications</a></li>
-            <li><a href="#" onclick="openSection('contact'); return false;">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- 🔹 Contact Section (Always Visible at Bottom Right) -->
-    <section id="contact" class="contact-section">
-        <h3>Get in Touch 📬</h3>
-        <p>Email: <a href="mailto:warevaishnavip@gmail.com">warevaishnavip@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/vaishnavi-ware/" target="_blank">Vaishnavi Ware</a></p>
-    </section>
+<!-- 🔹 Contact Section (Always Visible at Bottom Right) -->
+<section id="contact" class="contact-section">
+    <h3>Get in Touch 📬</h3>
+    <div class="contact-buttons">
+      <a href="mailto:warevaishnavip@gmail.com" class="contact-btn" target="_blank">
+        <img src="images/gmail-logo.webp" alt="Email" class="icon" /> Email Me
+      </a>
+      <a href="https://www.linkedin.com/in/vaishnavi-ware/" class="contact-btn" target="_blank">
+        <img src="images/linkedin-logo.png" alt="LinkedIn" class="icon" /> LinkedIn
+      </a>
+    </div>
+  </section>
+  
+  
 
    <!-- Content Sections (Hidden by Default) -->
    <div id="content-container">
     <section id="about" class="content-section">
         <button class="close-btn" onclick="closeSection()">✖</button>
-                <h3>About Me 👋</h3>
+                <h2>About Me 👋</h2>
                 <p>Welcome! I’m Vaishnavi Pravin Ware, a versatile marketing specialist with a passion for strategic growth, digital innovation, and marketing management. With a Master’s in Marketing Management from the University of Cincinnati and a background in Computer Engineering, I bring a unique mix of analytical thinking and creative execution to the table.</p>
                 <p>I specialize in impactful marketing strategies that connect brands with their audiences through insight-driven storytelling, and digital innovation. Whether it’s crafting high converting campaigns, optimizing brand presence, or launching products, I take a strategic, hands-on approach to deliver measurable results.</p>
                 <p>I thrive on solving critical problems, from uncovering market gaps and optimizing digital strategies to enhancing brand positioning. My approach is rooted in data-driven insights and consumer psychology, ensuring every marketing initiative drives long-term success and tangible impact. As a self-starter, I proactively tackle challenges, refine strategies, and create solutions that resonate with both businesses and customers.</p>
             </section>
-            
-            <section id="education" class="content-section">
+
+            <section id="education" class="education-section">
                 <button class="close-btn" onclick="closeSection()">✖</button>
-                <h3>Education 🎓</h3>
-                <div class="timeline-item">
-                    <h4>Master of Marketing Management (GPA: 4.0/4.0)</h4>
-                    <p>University of Cincinnati, Carl H. Lindner College of Business</p>
-                    <p>📍 Cincinnati, Ohio | Expected December 2024</p>
-                    <ul>
-                        <li>Focus on Marketing Strategy, Market Research, Consumer Behavior, and Brand Strategy</li>
-                        <li>Study Abroad: Marketing Luxury Innovation Course at Politecnico di Milano, Italy (March 2024)</li>
-                        <li>Hands-on experience in strategic marketing projects, Consumer Behavior Analysis, and Marketing Automation</li>
-                    </ul>
+                <h2>Education 🎓</h2>
+              
+                <div class="edu-card">
+                  <h4>Master of Marketing Management (GPA: 4.0/4.0)</h4>
+                  <p>University of Cincinnati, Carl H. Lindner College of Business</p>
+                  <p>📍 Cincinnati, Ohio | Expected December 2024</p>
+                  <ul>
+                    <li>Focus on Marketing Strategy, Market Research, Consumer Behavior, and Brand Strategy</li>
+                    <li>Study Abroad: Politecnico di Milano, Italy (March 2024)</li>
+                    <li>Hands-on experience in strategic marketing and marketing automation</li>
+                  </ul>
                 </div>
-                <div class="timeline-item">
-                    <h4>Bachelor of Engineering in Computer Engineering (GPA: 3.40/4.0)</h4>
-                    <p>Savitribai Phule Pune University</p>
-                    <p>📍 Pune, India | May 2022</p>
-                    <ul>
-                        <li>Strong foundation in data analysis, SQL, web development, and problem-solving</li>
-                        <li>Integrated technical expertise with marketing strategies for data-driven decision-making</li>
-                    </ul>
+              
+                <div class="edu-card">
+                  <h4>Bachelor of Engineering in Computer Engineering (GPA: 3.40/4.0)</h4>
+                  <p>Savitribai Phule Pune University</p>
+                  <p>📍 Pune, India | May 2022</p>
+                  <ul>
+                    <li>Strong foundation in data analysis, SQL, web development, and problem-solving</li>
+                    <li>Blended technical skills with marketing strategies for data-driven decision-making</li>
+                  </ul>
                 </div>
-            </section>
-            
-            
-            <section id="experience" class="content-section">
+              </section>
+
+              <section id="experience" class="content-section">
                 <button class="close-btn" onclick="closeSection()">✖</button>
-                <h3>Experience & Impact 💼</h3>
+                <h3>Experience & Impact 💼</h2>
+              
                 <div class="experience-grid">
-                    <div class="experience-card">
-                        <h4>Product Management Intern | Cummins Inc.</h4>
-                        <p>📍 Columbus, Indiana | May 2024 – Aug 2024</p>
-                        <ul>
-                            <li>Managed 3 product lines with a customer-centric approach, increasing sales by 5.3%.</li>
-                            <li>Led competitive analysis and pricing strategy, optimizing market positioning.</li>
-                            <li>Worked with cross-functional teams to enhance efficiency and project turnaround.</li>
-                        </ul>
-                    </div>
-                    <div class="experience-card">
-                        <h4>Social Media Marketing Assistant | University of Cincinnati</h4>
-                        <p>📍 Cincinnati, Ohio | Aug 2023 – Dec 2024</p>
-                        <ul>
-                            <li>Developed and executed social media campaigns, increasing engagement by 18%.</li>
-                            <li>Conducted competitor benchmarking to identify opportunities, leading to a 7% increase in audience retention.</li>
-                            <li>Aligned creative, content, and paid social strategies for optimized campaign results.</li>
-                        </ul>
-                    </div>
-                    <div class="experience-card">
-                        <h4>Digital Marketing Associate | Sorted Agency</h4>
-                        <p>📍 Pune, India | July 2022 – July 2023</p>
-                        <ul>
-                            <li>Boosted organic traffic by 7% and improved domain authority by 21.5% through strategic SEO.</li>
-                            <li>Led PPC campaigns, achieving a 12.8% increase in ROI.</li>
-                            <li>Designed and optimized email marketing campaigns using HubSpot.</li>
-                        </ul>
-                    </div>
+              
+                  <div class="experience-card">
+                    <h4>Product Management Intern</h4>
+                    <p class="company">Cummins Inc.</p>
+                    <p class="exp-location">📍 Columbus, IN | May 2024 – Aug 2024</p>
+                    <ul>
+                      <li>Managed 3 product lines; increased sales by 5.3%.</li>
+                      <li>Led pricing and competitive analysis.</li>
+                      <li>Collaborated cross-functionally to improve operations.</li>
+                    </ul>
+                  </div>
+              
+                  <div class="experience-card">
+                    <h4>Social Media Marketing Assistant</h4>
+                    <p class="company">University of Cincinnati</p>
+                    <p class="exp-location">📍 Cincinnati, OH | Aug 2023 – Dec 2024</p>
+                    <ul>
+                      <li>Boosted social media engagement by 18%.</li>
+                      <li>Improved retention through benchmarking insights.</li>
+                    </ul>
+                  </div>
+              
+                  <div class="experience-card">
+                    <h4>Digital Marketing Associate</h4>
+                    <p class="company">Sorted Agency</p>
+                    <p class="exp-location">📍 Pune, India | Jul 2022 – Jul 2023</p>
+                    <ul>
+                      <li>Improved SEO; boosted organic traffic by 7%.</li>
+                      <li>Increased ROI from PPC by 12.8%.</li>
+                    </ul>
+                  </div>
+              
+                  <div class="experience-card">
+                    <h4>Product Management Associate</h4>
+                    <p class="company">Cummins India Ltd.</p>
+                    <p class="exp-location">📍 Pune, India | Dec 2021 – May 2022</p>
+                    <ul>
+                      <li>Assisted product development strategy and implementation.</li>
+                      <li>Supported cross-border team communication and reporting.</li>
+                    </ul>
+                  </div>
+              
                 </div>
-            </section>
+              </section>
+              
+              
 
             <section id="projects" class="content-section">
             <button class="close-btn" onclick="closeSection()">✖</button>
-                <h3>Projects 🚀</h3>
-                
+                <h2>Projects 🚀</h2>
+                <div class="projects-scroll">
+                <div class="projects-grid">
                 <div class="project-card">
                     <h4>Establishing Brand Awareness – Capstone Research</h4>
                     <p>Brand awareness study for Best Point Education & Behavioral Health</p>
@@ -160,11 +187,13 @@
                     </ul>
                     <p><strong>Skills Applied:</strong> Brand Strategy | Consumer Insights | Loyalty Marketing | Digital Engagement | Community Outreach</p>
                 </div>
+            </div>
+            </div>
             </section>
             
             <section id="skills" class="content-section">
                 <button class="close-btn" onclick="closeSection()">✖</button>
-                <h3>My Strongest Skills 🚀</h3>
+                <h2>My Strongest Skills 🚀</h2>
                 <ul>
                     <li><strong>Digital Marketing:</strong> SEO, SEM, PPC Campaigns, Content Strategy, Social Media Marketing, Email Marketing</li>
                     <li><strong>Market Research:</strong> A/B Testing, Competitive Analysis, Consumer Insights, Data Analysis</li>
