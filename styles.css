@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 body {
@@ -214,7 +214,7 @@ body {
 .project-card h4 {
     font-size: 1.2rem;
     color: #E27D60;
-    font-family: 'Lancelot', serif;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .edu-card ul,
@@ -274,7 +274,7 @@ body {
     color: #E27D60; 
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Lancelot', serif;
+    font-family: 'Cormorant Garamond', serif;
   }
   
 #about p {
@@ -306,12 +306,12 @@ body {
   }
   
   /* Title */
-  #education h3 {
+  #education h2 {
     font-size: 2rem;
     color: #E27D60;
     text-align: center;
     margin-bottom: 25px;
-    font-family: 'Lancelot', serif;
+    font-family: 'Cormorant Garamond', serif;
   }
   
   
@@ -319,7 +319,7 @@ body {
   .edu-card h4 {
     font-size: 1.2rem;
     color: #E27D60;
-    font-family: 'Lancelot', serif;
+    font-family: 'Cormorant Garamond', serif;
     margin-bottom: 5px;
   }
   
@@ -363,12 +363,12 @@ body {
   }
   
   /* Section Title */
-  #experience h3 {
+  #experience h2 {
     font-size: 2rem;
     color: #E27D60;
     text-align: center;
     margin-bottom: 30px;
-    font-family: 'Lancelot', serif;
+    font-family: 'Cormorant Garamond', serif;
   }
   
   /* Grid Layout */
@@ -390,7 +390,7 @@ body {
   .experience-card h4 {
     font-size: 1.2rem;
     color: #E27D60;
-    font-family: 'Lancelot', serif;
+    font-family: 'Cormorant Garamond', serif;
     margin-bottom: 4px;
   }
   
@@ -451,12 +451,12 @@ body {
 
   
   /* Section Title */
-  #projects h3 {
+  #projects h2 {
     font-size: 2rem;
     color: #E27D60;
     text-align: center;
     margin-bottom: 30px;
-    font-family: 'Lancelot', serif;
+    font-family: 'Cormorant Garamond', serif;
   }
   
   /* Grid Layout */
@@ -478,7 +478,7 @@ body {
   .project-card h4 {
     font-size: 1.2rem;
     color: #E27D60;
-    font-family: 'Lancelot', serif;
+    font-family: 'Cormorant Garamond', serif;
     margin-bottom: 5px;
   }
   
@@ -548,7 +548,7 @@ body {
     color: #E27D60;
     text-align: center;
     margin-bottom: 25px;
-    font-family: 'Lancelot', serif;
+    font-family: 'Cormorant Garamond', serif;
   }
   
 /* Skills List */
@@ -585,7 +585,7 @@ body {
     font-size: 2rem;
     color: #E27D60;
     margin-bottom: 20px;
-    font-family: 'Lancelot', serif;
+    font-family: 'Cormorant Garamond', serif;
   }
   
   /* List of Certifications */
