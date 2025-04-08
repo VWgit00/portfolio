@@ -43,3 +43,43 @@ document.addEventListener("DOMContentLoaded", function () {
     window.openSection = openSection;
     window.closeSection = closeSection;
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const phrases = [
+      "Marketing Strategist",
+      "Digital Growth Enthusiast",
+      "Brand Storyteller"
+    ];
+  
+    const el = document.getElementById("rotating-text");
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+  
+    function type() {
+      const currentPhrase = phrases[phraseIndex];
+      const displayedText = currentPhrase.substring(0, charIndex);
+  
+      el.textContent = displayedText;
+  
+      if (!isDeleting) {
+        charIndex++;
+        if (charIndex === currentPhrase.length + 1) {
+          isDeleting = true;
+          setTimeout(type, 1000); // pause before deleting
+          return;
+        }
+      } else {
+        charIndex--;
+        if (charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+      }
+  
+      setTimeout(type, isDeleting ? 50 : 100);
+    }
+  
+    type(); // Start the loop
+  });
+  
