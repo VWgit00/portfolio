@@ -1,207 +1,255 @@
 
-/* 🔹 General Reset */
+/*********************************************************General Reset *********************************************************************/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #FAF3E0; /* Soft Beige */
-    color: #2F2F2F;
-    min-height: 100vh;
-    overflow-x: hidden;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FAF3E0;
+  color: #2F2F2F;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }
 
 
-/* 🔹 Hero Section */
+/********************************************************* Hero Section *********************************************************************/
 .hero-section {
-    width: 100%;
-    height: 80vh; /* Reduced height to bring other sections closer */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #FAF3E0; /* Soft Beige */
-    animation: fadeIn 1.5s ease-in-out;
-    
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #FAF3E0;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-/* 🔹 Hero Content & Profile */
+/* Hero Content & Profile */
 .hero-content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px; /* Reduced spacing between profile & text */
-    max-width: 900px;
-    width: 90%;
-    animation: slideUp 1.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  width: 90%;
+  animation: slideUp 1.2s ease-in-out;
 }
 
-/* 🔹 Profile Picture */
+/* Profile Picture */
 .profile-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #E27D60; /* Coral Accent */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-    animation: fadeInScale 1s ease-in-out;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #E27D60;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  animation: fadeInScale 1s ease-in-out;
 }
 
-/* 🔹 Hero Text */
+/* Hero Text */
 .hero-content {
-    color: #2F2F2F;
-    text-align: left;
-    max-width: 450px;
-    opacity: 0;
-    animation: slideUp 1s ease-in-out 0.5s forwards;
+  color: #2F2F2F;
+  text-align: left;
+  max-width: 450px;
+  opacity: 0;
+  animation: slideUp 1s ease-in-out 0.5s forwards;
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
 }
 
 .hero-content .tagline {
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 
-/* 🔹 Navbar (Below Hero Section) */
+/********************************************************* Navbar *********************************************************************/
 .navbar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 0; /* Reduced padding to keep navbar closer */
-    margin-top: -50px; /* Further reduces space from hero */
-    position: relative;
-    transition: all 0.3s ease-in-out;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  margin-top: -50px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
 
-/* 🔹 Navbar Links */
+/*  Navbar Links */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
-/* 🔹 Navbar Items */
+/*  Navbar Items */
 .nav-links li {
-    padding: 8px 12px;
-    transition: transform 0.3s ease-in-out;
+  padding: 8px 12px;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* 🔹 Navbar Hover & Active Effects */
+/*  Navbar Hover & Active Effects */
 .nav-links li:hover {
-    transform: scale(1.05);
-    background: rgba(255, 160, 122, 0.2); /* Soft coral hover effect */
+  transform: scale(1.05);
+  background: rgba(255, 160, 122, 0.2);
 }
 
-/* 🔹 Navbar Links Styling */
+/*  Navbar Links Styling */
 .nav-links a {
-    text-decoration: none;
-    color: #2F2F2F;
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    transition: color 0.3s ease-in-out;
-    position: relative;
+  text-decoration: none;
+  color: #2F2F2F;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease-in-out;
+  position: relative;
 }
 
-/* 🔹 Underline Animation */
+/*  Underline Animation */
 .nav-links a::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #E27D60;
-    position: absolute;
-    left: 50%;
-    bottom: -4px;
-    transition: all 0.3s ease-in-out;
-    transform: translateX(-50%);
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #E27D60;
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a:focus {
     color: #E27D60;
+    outline: none;
 }
-
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a:focus::after {
     width: 100%;
 }
 
-/* 🔹 Contact Section (Fixed at Bottom) */
+/*********************************************************  Contact Section  *********************************************************/
 .contact-section {
-    width: 100%;
-    background: #1C1F33; /* Deep Navy */
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 0.9rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    z-index: 100;
-  }
+  width: 100%;
+  background: #1C1F33;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 100;
+}
   
 .contact-section a {
-    color: #E27D60; /* Soft Pink */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
+  color: #E27D60;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
   
 .contact-section a:hover {
-    color: #D6B4A0; /* Muted Peach */
-  }
+  color: #D6B4A0;
+}
 
-
-  .contact-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 15px;
-  }
+.contact-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
   
-  .contact-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    background-color: transparent;
-    
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #E27D60;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+  
+.contact-btn .icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+  
+/*  Responsive Padding for Contact Section */
+@media (max-width: 900px), (max-width: 768px) {
+  .contact-section {
+    padding: 12px 0;
+  }
+}
+
+/********************************************************** Cards & Grid Style **********************************************************/
+.edu-card, .experience-card, .project-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.edu-card h4,
+.experience-card h4,
+.project-card h4 {
+    font-size: 1.2rem;
     color: #E27D60;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-  }
-  
-  .contact-btn .icon {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-  }
-  
-  /* 🔹 Responsive Padding for Contact Section */
-  @media (max-width: 900px), (max-width: 768px) {
-    .contact-section {
-      padding: 12px 0;
-    }
-  }
-  
+    font-family: 'Lancelot', serif;
+}
 
-/* 🔹 About Section (Styled like content-section with Glassmorphism) */
+.edu-card ul,
+.experience-card ul,
+.project-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.edu-card ul li,
+.experience-card ul li,
+.project-card ul li {
+    font-size: 0.95rem;
+    color: #FCEEDB;
+    margin-bottom: 8px;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
+}
+
+.project-card p.skills-applied {
+  font-size: 0.95rem;
+  color: #FFDAB9;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.projects-grid,
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+/********************************************************** About Section **********************************************************/
 #about {
     display: none;
     position: absolute;
@@ -221,7 +269,6 @@ body {
     color: #FAF3E0; /* Soft Beige text for contrast */
   }
   
-  
 #about h2 {
     font-size: 2rem;
     color: #E27D60; 
@@ -238,7 +285,7 @@ body {
     margin-bottom: 15px;
   }
 
-/* 🔹 Education Section Glass Style */
+/********************************************************** Education Section **********************************************************/
 #education {
     display: none;
     position: absolute;
@@ -267,14 +314,6 @@ body {
     font-family: 'Lancelot', serif;
   }
   
-  /* Each Education Card */
-  .edu-card {
-    background: rgba(255, 255, 255, 0.08);
-    padding: 20px 25px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
   
   /* Heading for Degree */
   .edu-card h4 {
@@ -292,11 +331,7 @@ body {
     margin-bottom: 6px;
   }
   
-  /* Bullet points */
-  .edu-card ul {
-    padding-left: 20px;
-    margin-top: 10px;
-  }
+ 
   
   .edu-card ul li {
     font-size: 0.95rem;
@@ -307,7 +342,7 @@ body {
   }
   
   
-/* 🔹 Experience Section Container */
+/********************************************************** Experience Section **********************************************************/
 #experience {
     display: none;
     position: absolute;
@@ -336,14 +371,14 @@ body {
     font-family: 'Lancelot', serif;
   }
   
-  /* 🔹 Grid Layout */
+  /* Grid Layout */
   .experience-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
   }
   
-  /* 🔹 Each Card */
+  /* Each Card */
   .experience-card {
     background: rgba(255, 255, 255, 0.08);
     padding: 20px 25px;
@@ -390,31 +425,30 @@ body {
     line-height: 1.6;
   }
   
-/* 🔹 Projects Section */
+/********************************************************** Projects Section **********************************************************/
 #projects {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85%;
-    max-width: 1000px;
-    height: 90vh; /* new */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* not center to allow scroll */
-    align-items: center;
-    background: rgba(28, 31, 51, 0.8);
-    backdrop-filter: blur(16px);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.6s ease-in-out;
-    color: #FAF3E0;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    overflow: hidden;
-  }
-  
+  display: none; /* 👈 ADD THIS LINE */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  max-width: 1000px;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(28, 31, 51, 0.8);
+  backdrop-filter: blur(16px);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+  color: #FAF3E0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+}
+
   
   /* Section Title */
   #projects h3 {
@@ -443,7 +477,7 @@ body {
   /* Title */
   .project-card h4 {
     font-size: 1.2rem;
-    color: #F8C8DC;
+    color: #E27D60;
     font-family: 'Lancelot', serif;
     margin-bottom: 5px;
   }
@@ -458,10 +492,6 @@ body {
   }
   
   /* Bullet Points */
-  .project-card ul {
-    padding-left: 20px;
-    margin-top: 10px;
-  }
   
   .project-card ul li {
     font-size: 0.95rem;
@@ -480,18 +510,17 @@ body {
     font-style: italic;
   }
 
-  
-  /* Scrollable content area */
-  .projects-scroll {
-    width: 100%;
-    max-height: 70vh;
-    overflow-y: auto;
-    padding-right: 8px;
-    margin-top: 10px;
-  }
-  
+/* Scrollable content area */
+.projects-scroll {
+  width: 100%;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 8px;
+  margin-top: 10px;
+  scrollbar-gutter: stable;
+}
 
-/* 🔹 Skills Section Styling */
+/********************************************************** Skills Section **********************************************************/
 #skills {
     display: none;
     position: absolute;
@@ -522,21 +551,16 @@ body {
     font-family: 'Lancelot', serif;
   }
   
-  /* Skills List */
-  #skills ul {
-    list-style: disc;
-    padding-left: 25px;
-  }
-  
-  #skills ul li {
-    font-size: 1.05rem;
-    margin-bottom: 10px;
-    font-family: 'Cormorant Garamond', serif;
-    line-height: 1.7;
-    color: #FCEEDB;
-  }
+/* Skills List */
+#skills ul li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.7;
+  color: #FCEEDB;
+}
 
-  /* 🔹 Certifications Section Styling */
+  /********************************************************** Certifications Section Styling **********************************************************/
 #certifications {
     display: none;
     position: absolute;
@@ -565,173 +589,86 @@ body {
   }
   
   /* List of Certifications */
-  #certifications ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  #certifications ul li {
-    font-size: 1.05rem;
-    font-family: 'Cormorant Garamond', serif;
-    color: #FCEEDB;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-  
-  #certifications ul li:last-child {
-    border-bottom: none;
-  }
-  
-  
-/* 🔹 Content Sections (Transparent Glassmorphism Effect) */
-.content-section {
-    display: none;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    max-width: 850px;
-    background: rgba(255, 255, 255, 0.15); /* Soft transparent white */
-    backdrop-filter: blur(12px); /* Glassmorphism effect */
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    animation: fadeIn 0.5s ease-in-out;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
-    color: #1C1F33; /* Deep Navy */
+#certifications ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* 🔹 Title Styling Inside Sections */
-.content-section h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #F8C8DC; /* Soft Pink */
+  
+#certifications ul li {
+  font-size: 1.05rem;
+  font-family: 'Cormorant Garamond', serif;
+  color: #FCEEDB;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+  
+#certifications ul li:last-child {
+  border-bottom: none;
 }
 
-/* 🔹 Paragraph Styling */
-.content-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #FAF3E0; /* Soft Beige */
-}
+  
 
+/********************************************************** Close Button **********************************************************/
 .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 20px;
-    cursor: pointer;
-    border: none;
-    background: none;
-    color: #FAF3E0;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .close-btn:hover {
-    color: #FAF3E0;
-  }
-  
-
-
-
-/* 🔹 Close Button */
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    cursor: pointer;
-    border: none;
-    background: none;
-    color: #FAF3E0;
-    transition: 0.3s ease-in-out;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #FAF3E0;
+  transition: 0.3s ease-in-out;
 }
 
 .close-btn:hover {
-    color: #D1925A;
+  color: #D1925A;
 }
 
-/* 🔹 Animations */
+/********************************************************** Animations **********************************************************/
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
+
 
 @keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInScale {
-    from {
-        opacity: 0;
-        transform: scale(0.85);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 
 
-/* 🔹 Responsive Design */
+/********************************************************** Responsive Design **********************************************************/
 @media (max-width: 900px) {
-    .hero-content-wrapper {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-    .profile-image {
-        width: 180px;
-        height: 180px;
-    }
-    .hero-content {
-        text-align: center;
-    }
-    .navbar {
-        width: 90%;
-        padding: 8px;
-    }
-    .nav-links {
-        gap: 12px;
-    }
-    .contact-section {
-        width: 100%;
-        padding: 12px 0;
-    }
+  .hero-content-wrapper {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+  }
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+  .navbar {
+    width: 90%;
+    padding: 8px;
+  }
+  .nav-links {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        width: 95%;
-        padding: 6px;
-    }
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .nav-links li {
-        padding: 6px 8px;
-    }
-    .contact-section {
-        width: 100%;
-        padding: 12px 0;
-    }
-}
+
 
 
 
