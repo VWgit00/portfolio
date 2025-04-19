@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #FAF3E0;
+  background: #faf2e6;
   color: #2F2F2F;
   min-height: 100vh;
   overflow-x: hidden;
@@ -28,7 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #FAF3E0;
+  background: #faf2e6;
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -265,7 +265,7 @@ body {
   overflow-y: auto;  /* 🔥 enables scrollbar */
   background: rgba(28, 31, 51, 0.8);
   backdrop-filter: blur(16px);
-  padding: 30px;
+  padding: 30px 30px 80px 30px;
   border-radius: 5px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   text-align: justify;
@@ -303,7 +303,7 @@ body {
   overflow-y: auto;
   background: rgba(28, 31, 51, 0.8);
   backdrop-filter: blur(16px);
-  padding: 30px;
+  padding: 30px 30px 80px 30px;
   border-radius: 8px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   color: #FAF3E0;
@@ -363,7 +363,7 @@ body {
   overflow-y: auto;
   background: rgba(28, 31, 51, 0.8);
   backdrop-filter: blur(16px);
-  padding: 30px;
+  padding: 30px 30px 80px 30px;
   border-radius: 8px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.6s ease-in-out;
@@ -451,7 +451,7 @@ body {
   align-items: center;
   background: rgba(28, 31, 51, 0.8);
   backdrop-filter: blur(16px);
-  padding: 30px;
+  padding: 30px 30px 80px 30px;
   border-radius: 8px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.6s ease-in-out;
@@ -545,7 +545,7 @@ body {
   overflow-y: auto;
   background: rgba(28, 31, 51, 0.85);
   backdrop-filter: blur(16px);
-  padding: 30px;
+  padding: 30px 30px 80px 30px;
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   color: #FAF3E0;
@@ -592,7 +592,7 @@ body {
     overflow-y: auto;
     background: rgba(28, 31, 51, 0.85);
     backdrop-filter: blur(16px);
-    padding: 30px;
+    padding: 30px 30px 80px 30px;
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     color: #FAF3E0;
