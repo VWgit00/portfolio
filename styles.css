@@ -144,16 +144,16 @@ body {
   width: 100%;
   background: #1C1F33;
   color: white;
-  padding: 15px 0;
+  padding: 8px 0; /* 👈 reduced from 15px to 8px */
+  font-size: 0.95rem; /* 👈 slightly smaller text */
   text-align: center;
-  font-size: 1.1rem;
   position: fixed;
   bottom: 0;
   left: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 100;
-  overflow-y: auto;
 }
+
   
 .contact-section a {
   color: #E27D60;
@@ -170,11 +170,12 @@ body {
 
 .contact-buttons {
   display: flex;
-  gap: 15px;
+  gap: 10px; /* 👈 was 15px */
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 15px;
+  margin-top: 8px; /* 👈 was 15px */
 }
+
   
 .contact-btn {
   display: inline-flex;
@@ -188,6 +189,8 @@ body {
   font-weight: 1000;
   font-size: 1.1rem;
   transition: all 0.3s ease;
+  padding: 6px 12px; /* 👈 was 8px 16px */
+  font-size: 1rem;   /* 👈 was 1.1rem */
 }
   
 .contact-btn .icon {
@@ -730,7 +733,7 @@ body {
 #about::-webkit-scrollbar,
 #education::-webkit-scrollbar,
 #experience::-webkit-scrollbar,
-#projects::-webkit-scrollbar,
+
 #skills::-webkit-scrollbar,
 #certifications::-webkit-scrollbar {
   width: 8px;
@@ -739,7 +742,7 @@ body {
 #about::-webkit-scrollbar-thumb,
 #education::-webkit-scrollbar-thumb,
 #experience::-webkit-scrollbar-thumb,
-#projects::-webkit-scrollbar-thumb,
+
 #skills::-webkit-scrollbar-thumb,
 #certifications::-webkit-scrollbar-thumb {
   background-color: rgba(226, 125, 96, 0.6); /* Coral Thumb */
