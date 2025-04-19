@@ -152,6 +152,7 @@ body {
   left: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 100;
+  overflow-y: auto;
 }
   
 .contact-section a {
@@ -253,23 +254,25 @@ body {
 
 /********************************************************** About Section **********************************************************/
 #about {
-    display: none;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    max-width: 850px;
-    background: rgba(28, 31, 51, 0.8); /* Deep Navy Blue with transparency */
-    backdrop-filter: blur(16px); /* Stronger blur for glass effect */
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    text-align: justify;
-    animation: fadeIn 0.6s ease-in-out;
-    
-    color: #FAF3E0; /* Soft Beige text for contrast */
-  }
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  max-width: 850px;
+  max-height: 85vh; /* 💡 allows internal scrolling */
+  overflow-y: auto;  /* 🔥 enables scrollbar */
+  background: rgba(28, 31, 51, 0.8);
+  backdrop-filter: blur(16px);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  animation: fadeIn 0.6s ease-in-out;
+  color: #FAF3E0;
+}
+
   
 #about h2 {
     font-size: 2rem;
@@ -289,23 +292,26 @@ body {
 
 /********************************************************** Education Section **********************************************************/
 #education {
-    display: none;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 850px;
-    background: rgba(28, 31, 51, 0.8); /* Deep navy */
-    backdrop-filter: blur(16px);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    color: #FAF3E0;
-    animation: fadeIn 0.6s ease-in-out;
-    text-align: justify;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-  }
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 850px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: rgba(28, 31, 51, 0.8);
+  backdrop-filter: blur(16px);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  color: #FAF3E0;
+  animation: fadeIn 0.6s ease-in-out;
+  text-align: justify;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
   
   /* Title */
   #education h2 {
@@ -346,23 +352,26 @@ body {
   
 /********************************************************** Experience Section **********************************************************/
 #experience {
-    display: none;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85%;
-    max-width: 1000px;
-    background: rgba(28, 31, 51, 0.8);
-    backdrop-filter: blur(16px);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.6s ease-in-out;
-    color: #FAF3E0;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    text-align: justify;
-  }
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  max-width: 1000px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: rgba(28, 31, 51, 0.8);
+  backdrop-filter: blur(16px);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+  color: #FAF3E0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: justify;
+}
+
   
   /* Section Title */
   #experience h2 {
@@ -449,6 +458,7 @@ body {
   color: #FAF3E0;
   border: 1px solid rgba(255, 255, 255, 0.15);
   overflow: hidden;
+  overflow-y: auto;
 }
 
   
@@ -524,25 +534,26 @@ body {
 
 /********************************************************** Skills Section **********************************************************/
 #skills {
-    display: none;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 900px;
-    background: rgba(28, 31, 51, 0.85); /* Deep navy with transparency */
-    backdrop-filter: blur(16px);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    color: #FAF3E0;
-    animation: fadeIn 0.6s ease-in-out;
-    text-align: left;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    overflow-y: auto;
-    max-height: 85vh;
-  }
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 900px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: rgba(28, 31, 51, 0.85);
+  backdrop-filter: blur(16px);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  color: #FAF3E0;
+  animation: fadeIn 0.6s ease-in-out;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
   
   /* Title */
   #skills h2 {
@@ -554,24 +565,32 @@ body {
   }
   
 /* Skills List */
-#skills ul li {
+#skills ul li{
   font-size: 1.1rem;
   margin-bottom: 10px;
   font-family: 'Cormorant Garamond', serif;
-  line-height: 1.7;
-  color: #FCEEDB;
+  color:#FCEEDB;
+}
+#skills .heading {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  color:#E27D60;
+ 
 }
 
   /********************************************************** Certifications Section Styling **********************************************************/
-#certifications {
+  #certifications {
     display: none;
-    position: absolute;
-    top: 48%;
+    position: fixed;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
     max-width: 850px;
-    background: rgba(28, 31, 51, 0.85); /* Deep navy with transparency */
+    max-height: 85vh;
+    overflow-y: auto;
+    background: rgba(28, 31, 51, 0.85);
     backdrop-filter: blur(16px);
     padding: 30px;
     border-radius: 10px;
@@ -581,6 +600,7 @@ body {
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.15);
   }
+  
   
   /* Section Title */
   #certifications h3 {
@@ -707,6 +727,24 @@ body {
 
 
 
+#about::-webkit-scrollbar,
+#education::-webkit-scrollbar,
+#experience::-webkit-scrollbar,
+#projects::-webkit-scrollbar,
+#skills::-webkit-scrollbar,
+#certifications::-webkit-scrollbar {
+  width: 8px;
+}
+
+#about::-webkit-scrollbar-thumb,
+#education::-webkit-scrollbar-thumb,
+#experience::-webkit-scrollbar-thumb,
+#projects::-webkit-scrollbar-thumb,
+#skills::-webkit-scrollbar-thumb,
+#certifications::-webkit-scrollbar-thumb {
+  background-color: rgba(226, 125, 96, 0.6); /* Coral Thumb */
+  border-radius: 10px;
+}
 
 
 
