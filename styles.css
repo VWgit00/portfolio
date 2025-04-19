@@ -533,6 +533,7 @@ body {
   padding-right: 8px;
   margin-top: 10px;
   scrollbar-gutter: stable;
+  
 }
 
 /********************************************************** Skills Section **********************************************************/
@@ -733,7 +734,7 @@ body {
 #about::-webkit-scrollbar,
 #education::-webkit-scrollbar,
 #experience::-webkit-scrollbar,
-
+#projects::-webkit-scrollbar,
 #skills::-webkit-scrollbar,
 #certifications::-webkit-scrollbar {
   width: 8px;
@@ -742,10 +743,10 @@ body {
 #about::-webkit-scrollbar-thumb,
 #education::-webkit-scrollbar-thumb,
 #experience::-webkit-scrollbar-thumb,
-
+#projects::-webkit-scrollbar,
 #skills::-webkit-scrollbar-thumb,
 #certifications::-webkit-scrollbar-thumb {
-  background-color: rgba(226, 125, 96, 0.6); /* Coral Thumb */
+  background-color: rgba(28, 31, 51, 0.8);; /* Coral Thumb */
   border-radius: 10px;
 }
 
