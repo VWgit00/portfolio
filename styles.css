@@ -198,6 +198,14 @@ body {
   height: 20px;
   object-fit: contain;
 }
+
+
+.contact-section .copyright {
+  margin-top: 8px; /* small space above */
+  font-size: 0.85rem; /* slightly smaller than body text */
+  color: rgba(255, 255, 255, 0.6); /* soft white */
+  font-weight: 400;
+}
   
 /*  Responsive Padding for Contact Section */
 @media (max-width: 900px), (max-width: 768px) {
