@@ -793,6 +793,16 @@ body {
     width: 150px;
     height: 150px;
   }
+  
+  /* typewritter */
+  .typewriter,
+  .typewriter-rotate {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+  }
 
   /* Navbar */
   .nav-links {
