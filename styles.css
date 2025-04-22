@@ -798,14 +798,14 @@ body {
     all: unset;
     display: block;
     font-size: 1.1rem;
-    color: #E27D60;
+    color: #2F2F2F;
     text-align: center;
     white-space: normal;
     overflow-wrap: break-word;
     max-width: 100%;
     margin-top: 10px;
   }
-  
+
   /* Navbar */
   .nav-links {
     display: flex;
