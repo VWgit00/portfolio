@@ -830,38 +830,43 @@ body {
   }
 
   /* Contact */
-  .contact-section {
-    text-align: center;
-    padding: 20px 10px;
+  @media (max-width: 768px) {
+    .contact-section {
+      text-align: center;
+      padding: 12px 10px;
+    }
+  
+    .contact-buttons {
+      display: flex;
+      flex-direction: row; /* 👈 side by side */
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+  
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 1rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      justify-content: center;
+    }
+  
+    .contact-btn .icon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .contact-section .copyright {
+      margin-top: 12px;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
   
-  .contact-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    margin-top: 10px;
-  }
-  
-  .contact-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-size: 1rem;
-    padding: 8px 16px;
-    border-radius: 6px;
-  }
-  
-  .contact-btn .icon {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .contact-section .copyright {
-    margin-top: 10px;
-    font-size: 0.8rem;
-  }
 
   /* Scrollable Project Area */
   .projects-scroll {
