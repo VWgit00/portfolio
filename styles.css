@@ -913,7 +913,7 @@ body {
     content: "•";
     color: #FAF3E0;
     font-weight: bold;
-    display: inline-block;
+    display: inline;
     width: 1em;
     margin-right: 0.5em;
     vertical-align: middle;
