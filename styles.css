@@ -896,6 +896,11 @@ body {
     overflow-y: auto; /* 👈 make inner content scrollable */
     padding-bottom: 60px; /* 👈 add space so content doesn't get cut by footer */
   }
+  
+  #skills ul {
+    padding-left: 20px; /* 👈 Gives room for bullets */
+    list-style-position: inside; /* 👈 Aligns bullets with text */
+  }
 
 }
 
