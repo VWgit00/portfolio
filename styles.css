@@ -842,42 +842,42 @@ body {
   }
 
   /* Contact */
-  @media (max-width: 768px) {
+  
     .contact-section {
       text-align: center;
-      padding: 12px 10px;
+      padding: 6px 8px;
     }
   
     .contact-buttons {
       display: flex;
       flex-direction: row; /* 👈 side by side */
       justify-content: center;
-      gap: 20px;
+      gap: 10px;
       flex-wrap: wrap;
-      margin-top: 10px;
+      margin-top: 6px;
     }
   
     .contact-btn {
       display: flex;
       align-items: center;
       gap: 6px;
-      font-size: 1rem;
-      padding: 6px 12px;
+      font-size: 0.85rem;
+      padding: 4px 8px;
       border-radius: 6px;
       justify-content: center;
     }
   
     .contact-btn .icon {
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
     }
   
     .contact-section .copyright {
-      margin-top: 12px;
-      font-size: 0.8rem;
+      margin-top: 4px;
+      font-size: 0.7rem;
       color: rgba(255, 255, 255, 0.6);
     }
-  }
+  
   
 
   /* Scrollable Project Area */
