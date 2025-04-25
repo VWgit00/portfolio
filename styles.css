@@ -899,9 +899,9 @@ body {
   /*skills section mobile view */
   
   #skills {
-    max-height: 70vh; /* 👈 reduce height slightly for mobile */
-    overflow-y: auto; /* 👈 make inner content scrollable */
-    padding-bottom: 60px; /* 👈 add space so content doesn't get cut by footer */
+    max-height: 70vh; /*  reduce height slightly for mobile */
+    overflow-y: auto; /*  make inner content scrollable */
+    padding-bottom: 60px; /* add space so content doesn't get cut by footer */
   }
   
   #skills ul {
@@ -911,16 +911,18 @@ body {
   
   #skills ul li::before {
     content: "•";
-    color: #E27D60;
+    color: #FAF3E0;
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-right: 0.5em;
+    vertical-align: middle;
   }
   
   #skills ul li {
     text-align: left;
     margin-bottom: 10px;
+    line-height: 1.6;
   }
 
 }
