@@ -7,6 +7,12 @@
   font-family: 'Cormorant Garamond', serif;
 }
 
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; /* Smooth fonts on iOS */
+  -moz-osx-font-smoothing: grayscale;  /* Smooth fonts on macOS */
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -17,6 +23,7 @@ body {
   overflow-x: hidden;
   position: relative;
   font-weight: 1000;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 
@@ -898,7 +905,7 @@ body {
   }
   
   #skills ul {
-    padding-left: 20px; /* 👈 Gives room for bullets */
+    padding-left: 24px; /* 👈 Gives room for bullets */
     list-style-position: inside; /* 👈 Aligns bullets with text */
   }
 
