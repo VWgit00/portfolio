@@ -897,7 +897,7 @@ body {
   /*skills section mobile view */
   
   #skills {
-    max-height: 80vh; /*  reduce height slightly for mobile */
+    max-height: 85vh; /*  reduce height slightly for mobile */
     overflow-y: auto; /*  make inner content scrollable */
     padding-bottom: 60px; /* add space so content doesn't get cut by footer */
   }
