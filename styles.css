@@ -822,6 +822,8 @@ body {
     max-width: 400px;
     margin: 0 auto;
     padding: 12px 0;
+    padding-bottom: 0; /* removes space below nav on mobile */
+    margin-bottom: 0;  /* just in case any margin sneaks in */
   }
   
   .nav-links li {
