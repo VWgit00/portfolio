@@ -905,8 +905,22 @@ body {
   }
   
   #skills ul {
-    padding-left: 24px; /* 👈 Gives room for bullets */
-    list-style-position: inside; /* 👈 Aligns bullets with text */
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #skills ul li::before {
+    content: "•";
+    color: #E27D60;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
+  }
+  
+  #skills ul li {
+    text-align: left;
+    margin-bottom: 10px;
   }
 
 }
