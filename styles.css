@@ -903,28 +903,11 @@ body {
     overflow-y: auto; /*  make inner content scrollable */
     padding-bottom: 60px; /* add space so content doesn't get cut by footer */
   }
-  
+    
   #skills ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  #skills ul li {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 12px;
-    line-height: 1.5;
+    padding-left: 20px; /* or increase to 24px if needed */
   }
 
-  #skills ul li::before {
-    content: "•";
-    color: #FAF3E0;
-    font-weight: bold;
-    width: 1em;
-    margin-right: 0.5em;
-    vertical-align: middle;
-  }
-  
 }
 
 
