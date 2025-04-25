@@ -826,6 +826,11 @@ body {
     margin-bottom: 0;  /* just in case any margin sneaks in */
   }
   
+  .navbar {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
   .nav-links li {
     width: 45%; /* Two columns */
     text-align: center;
