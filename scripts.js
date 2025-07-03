@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
     const phrases = [
-      "Marketing Strategist",
-      "Digital Growth Enthusiast",
+      "Product Strategist",
+      "Marketing Enthusiast",
       "Brand Storyteller"
     ];
   
